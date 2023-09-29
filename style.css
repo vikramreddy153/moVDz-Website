@@ -138,6 +138,7 @@ main {
 /* Your existing CSS code here */
 
 /* Add a media query for screens smaller than 768px (adjust as needed) */
+/* Add a media query for screens smaller than 768px (adjust as needed) */
 @media (max-width: 768px) {
     /* Adjust header layout for smaller screens */
     header {
@@ -149,18 +150,17 @@ main {
         margin-bottom: 1rem;
     }
 
-    .search-container {
-        margin-top: 1rem;
-    }
-
-    /* Adjust logo size for smaller screens */
+    /* Center the logo and adjust its size for smaller screens */
     .logo {
         width: 100px;
+        margin: 0 auto;
     }
 
-    /* Make the search input full-width */
+    /* Make the search input full-width but smaller */
     .search {
-        width: 100%;
+        width: 80%; /* You can adjust the width as needed */
+        max-width: 300px; /* You can adjust the maximum width as needed */
+        margin-top: 0.5rem; /* Add some top margin to separate it from the logo */
     }
 
     /* Adjust movie width for smaller screens */
@@ -170,4 +170,3 @@ main {
     
     /* Add any other necessary adjustments for smaller screens */
 }
-
